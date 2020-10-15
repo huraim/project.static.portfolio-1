@@ -1,0 +1,49 @@
+@mixin displayFlex($flex:flex, $row:row, $wrap:nowrap, $justify:center, $align:center) {
+	display: $flex;
+	flex-direction: $row;
+	flex-wrap: $wrap;
+	justify-content: $justify;
+	align-items: $align;
+}
+@mixin solidBorerStyle($width, $color, $border-style:solid) {
+	border: {
+		 width: $width;
+		 color: $color;
+		 style: $border-style;
+	}
+}
+@mixin boxShadow($x, $y, $blur, $color) {
+	-webkit-box-shadow: $x $y $blur $color;
+	box-shadow: $x $y $blur $color;
+}
+@mixin textShadow($x, $y, $blur, $color) {
+	-webkit-text-shadow: $x $y $blur $color;
+	text-shadow: $x $y $blur $color;
+}
+@mixin transitionEffect($prop, $duration, $delay:0) {
+	-webkit-transition: $prop $duration;
+	transition: $prop $duration;
+	-webkit-transition-delay: $delay;
+	transition-delay: $delay;
+}
+@mixin transformXY($x, $y) {
+	-webkit-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+@mixin borderBox($w, $style, $color) {
+	border: $w $style $color;
+}
+@mixin bgImage($url, $repeat, $position, $sizing:auto){
+	background-image: url($url);
+	background-repeat: $repeat;
+	background-position: $position;
+	background-sizing: $sizing;
+}
+@mixin bgCover($url) {
+	background: {
+		 image: url($url);
+		 repeat: no-repeat;
+		 position: center center;
+		 size: cover;
+	}
+}

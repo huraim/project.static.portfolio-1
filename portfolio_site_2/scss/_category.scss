@@ -1,0 +1,506 @@
+#content .inner {
+	margin: 0 auto; 
+	box-sizing: border-box;
+	padding: 0 20px;
+	position: relative;
+}
+#content .title {
+	text-align: left;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+	
+}
+#content .title.effect {
+	opacity: 1;
+	transform: translateY(0)
+}
+#content .title p {
+ font-size: 12px;
+ line-height: 16px;
+ color: #1565AE;
+ font-weight: 600;
+}
+#content .title dl dt {
+	font-size: 22px;
+	line-height: 32px;
+	margin-top: 12px;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+	color: #2D2D2D;
+}
+#content .title dl dd {
+	font-size: 13px;
+	line-height: 22px;
+	margin-top: 8px;
+	margin-bottom: 45px;
+	color: #585858;
+	font-weight: 400;
+}
+
+
+#pension {
+	margin-top: 60px;
+	overflow: hidden;
+}
+#pension .swiper-container {
+	width: 250px;
+	height: 292px;
+	overflow: visible;
+}
+#pension .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+	transition-delay: 0.5s;
+}
+#pension .swiper-slide.effect {
+	opacity: 1;
+	transform: translateY(0)
+}
+#pension .swiper-slide span {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	font-size: 12px;
+	color: #585858;
+	background-color: rgba(255,255,255,.7);
+}
+#pension .swiper-slide p {
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	color: #fff;
+	font-size: 14px;
+	text-shadow: 3px 3px 20px #000;
+}
+#pension .swiper-slide:nth-child(1){
+	background: url(/portfolio/portfolio_site_2/images/pension3.png) no-repeat center center;
+	background: cover;
+}
+#pension .swiper-slide:nth-child(2){
+	background: url(/portfolio/portfolio_site_2/images/pension2.png) no-repeat center center;
+	background: cover;
+}
+#pension .swiper-slide:nth-child(3){
+	background: url(/portfolio/portfolio_site_2/images/pension1.png) no-repeat center center;
+	background: cover;
+}
+#pension .swiper-slide:nth-child(4){
+	background: url(/portfolio/portfolio_site_2/images/pension2.png) no-repeat center center;
+	background: cover;
+}
+#pension .swiper-slide:nth-child(5){
+	background: url(/portfolio/portfolio_site_2/images/pension3.png) no-repeat center center;
+	background: cover;
+}
+#pension .swiper-slide:nth-child(6){
+	background: url(/portfolio/portfolio_site_2/images/pension1.png) no-repeat center center;
+	background: cover;
+}
+
+#pension .swiper_inner {
+	margin: 0 auto; 
+	margin-top: 35px;
+	box-sizing: border-box;
+	padding: 0 20px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	transition-delay: 0.7s;
+}
+#pension .swiper_inner.effect {
+	opacity: 1;
+}
+#pension .swiper_inner .swiper-scrollbar {
+	width: 52vw;
+	height: 5px;
+}
+@media only screen and (orientation: landscape) {
+	#pension .swiper_inner .swiper-scrollbar {
+		width: 72vw;
+	}
+}
+#pension .swiper_inner .swiper-scrollbar .swiper-scrollbar-drag {
+	background-color: #1565AE;
+}
+#pension .swiper_inner .btn {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	width: 110px;
+	height: 30px;
+}
+#pension .swiper_inner .btn .swiper-button-prev {
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #1565AE;
+	box-sizing: border-box;
+}
+#pension .swiper_inner .btn .swiper-button-prev::after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 11px;
+	background: url(/portfolio/portfolio_site_2/images/mb_prev.png) no-repeat center center;
+	background-size: cover;
+}
+#pension .swiper_inner .btn .swiper-button-next {
+	position: absolute;
+	top: 22px;
+	left: 40px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid #1565AE;
+	box-sizing: border-box;
+}
+#pension .swiper_inner .btn .swiper-button-next::after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 11px;
+	background: url(/portfolio/portfolio_site_2/images/mb_next.png) no-repeat center center;
+	background-size: cover;
+}
+#pension .swiper_inner .btn .play {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #1565AE;
+	cursor:pointer;
+}
+#pension .swiper_inner .btn .play::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: "";
+	display: block;
+	width: 8px;
+	height: 11px;
+	background: url(/portfolio/portfolio_site_2/images/mb_pause.png) no-repeat center center;
+	background-size: cover;
+}
+#pension .swiper_inner .btn .play.active::after {
+	background: url(/portfolio/portfolio_site_2/images/mb_play.png) no-repeat center center;
+	background-size: cover;
+}
+
+
+#notice {
+	margin-top: 60px;
+}
+#notice .notice_btn {
+	position: absolute;
+	top: 44px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+#notice .notice_btn.effect {
+	opacity: 1;
+	transform: translateY(0)
+}
+#notice .notice_btn .notice_btn_span {
+	position: relative;
+	display: block;
+}
+#notice .notice_btn .notice_btn_span::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 2px;
+	transform: translate(-50%, -50%);
+	background-color: #000;
+}
+#notice .notice_btn .notice_btn_span::after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 20px;
+	transform: translate(-50%, -50%) rotate(180deg);
+	background-color: #000;
+}
+#notice .list {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+	transition-delay: 0.5s;
+	&.effect {
+		opacity: 1;
+		transform: translateY(0)
+	}
+	li {
+		position: relative;
+		margin-top: 50px;
+		&:first-child {
+			margin-top: 0;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			display: block;
+			bottom: -25px;
+			left: 0;
+			background-color: #ccc;
+			height: 1px;
+			width: 100%;
+		}
+		&:hover p {
+			text-decoration: underline;
+		}
+		.title_text {
+			strong {
+				display: inline-block;
+				font-size: 16px;
+				margin-right: 20px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				max-width: calc(100% - 100px);
+			}
+			span {
+				display: inline-block;
+				text-align: right;
+				font-size: 12px;
+				line-height: 18px;
+				color: #999;
+				vertical-align: bottom;
+			}
+		}
+		.list_text {
+			width: 100%;	
+			p {
+				font-size: 13px;
+				line-height: 22px;
+				margin-top: 15px;
+				color: #999;
+				max-height: 48px;
+				white-space: normal;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				line-clamp: 2;
+			}
+		}
+	}
+}
+
+#trip {
+	margin-top: 80px;
+}
+#trip .list {
+	width: calc((100% - 12px)/2);
+	float: left;
+	display: block;
+	position: relative;
+	margin-left: 12px;
+	margin-top: 12px;
+	overflow: hidden;
+	border-radius: 4px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.1);
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+	transition-delay: 0.5s;
+}
+#trip .list.effect {
+	opacity: 1;
+	transform: translateY(0)
+}
+#trip .list:nth-child(2n+1) {
+	margin-left: 0;
+}
+#trip .list:nth-child(1) {
+	margin-top: 0;
+}
+#trip .list:nth-child(2) {
+	margin-top: 0;
+}
+#trip .list .photo {
+	padding-bottom: 50px;
+}
+#trip .list .photo img {
+	width: 100%;
+}
+#trip .list .description {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+#trip .list .description a {
+	display: block;
+	padding: 12px;
+	box-sizing: border-box;
+	position: relative;
+}
+#trip .list .description a p {
+	color: #585858;
+	font-size: 14px;
+}
+#trip .list .description img {
+	position: absolute;
+	right: 12px;
+	top: calc(50% - 6px);
+}
+#trip .list .description .more {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#trip .list .description .more span {
+	position: relative;
+	display: block;
+	width: 3px;
+	height: 3px;
+	background-color: #A6AFB6;
+	border-radius: 50%;
+}
+#trip .list .description .more span::before,
+#trip .list .description .more span::after {
+	position: absolute;
+	content: "";
+	display: block;
+	top: 0;
+	left: -6px;
+	width: 3px;
+	height: 3px;
+	background-color: #A6AFB6;
+	border-radius: 50%;
+}
+#trip .list .description .more span::after {
+	left: -12px;
+}
+@media only screen and (orientation: landscape) {
+	#trip .title br{
+		display: none;
+	}
+}
+
+
+#service {
+	margin-top: 60px;
+	background: url(/portfolio/portfolio_site_2/images/mc_map.png) no-repeat center center;
+	background-size: cover;
+	.list {
+		li {
+			margin-top: 30px;
+			opacity: 0;
+			transform: translateY(50px);
+			transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+			a {
+				display: block;
+				font-size: 0;
+				p {
+					display: inline-block;
+					margin-left: 20px;
+					font-weight: 500;
+					font-size: 18px;
+					vertical-align: middle;
+				}
+			}
+		}
+		&.effect {
+			li {
+				&:nth-child(1) {
+					opacity: 1;
+					transform: translateY(0);
+					transition-delay: 0.5s;
+				}
+				&:nth-child(2) {
+					opacity: 1;
+					transform: translateY(0);
+					transition-delay: 0.8s;
+				}
+				&:nth-child(3) {
+					opacity: 1;
+					transform: translateY(0);
+					transition-delay: 1.2s;
+				}
+			}
+		}
+		.img {
+			display: inline-block;
+			width: 70px;
+			height: 70px;
+			position: relative;
+			background-color: #C7C7C7;
+			border-radius: 50%;
+			vertical-align: middle;
+			img {
+				position: absolute;
+				left: calc(50% - 16px);
+				top: calc(50% - 16px);
+				z-index: 10;
+				width: 45%;
+			}
+		}
+	}
+}
+
+
+@media only screen and (orientation: landscape) {
+	#service .title br {
+		display: none;
+	}
+}
+
+#map {
+	margin-top: 30px;
+	width: 100%;
+	height: 250px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+#map.effect{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+#footer {
+	padding: 18px;
+	line-height: 1.5;
+	text-align: center;
+	font-size: 13px;
+	color: #999;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+#footer.effect {
+	opacity: 1;
+}
+#footer span {
+	color: #1565AE;
+}

@@ -1,0 +1,17 @@
+{ 
+			"item1": {
+				"img": "layers",
+				"dt": "Graphic design",
+				"dd": "어도비사 그래픽 툴 응용가능<br>Photoshop / illustrator<br>Indesign / Premiere / XD<br>"
+			},
+			"item2": {
+				"img": "design",
+				"dt": "Web design",
+				"dd": "레이아웃 구현<br>아이콘 상세 제작<br>PC / 모바일 / 반응형 페이지 디자인"
+			},
+			"item3": {
+				"img": "maintenance",
+				"dt": "Web Coding",
+				"dd": "HTML / CSS / SASS<br>jQuery / VanillaJS / AJAX / VueJS<br>GitHub를 이용한 시스템 협업 가능"
+			}
+}

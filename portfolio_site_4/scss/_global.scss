@@ -1,0 +1,119 @@
+$main-color: #2B5AB8;
+$main-font: 'Noto Sans HK','Noto Sans KR', sans-serif;
+
+body{
+	font-family: $main-font;
+}
+
+.clearfix::before,
+.clearfix::after {
+	display: block;
+	content: "";
+}
+.clearfix::after {
+	clear: both;
+}
+
+#header .upper {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+#header .upper .upper_inner {
+	position: relative;
+	width: 100vw;
+	height: 70px;
+	background-color: #fff;
+}
+#header .upper .logo {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#header .upper .logo h1 {
+	font-size: 16px;
+}
+#header .upper .logo h1 a {
+	display: block;
+}
+#header .upper .menu {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	width: 24px;
+	height: 24px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+#header .upper .menu span {
+	position: relative;
+	display: block;
+	width: 24px;
+	height: 2px;
+	background-color: #000;
+}
+#header .upper .menu span::before {
+	position: absolute;
+	display: block;
+	top: 9px;
+	right: 0;
+	content: "";
+	width: 24px;
+	height: 2px;
+	background-color: #000;
+}
+#header .upper .menu span::after {
+	position: absolute;
+	display: block;
+	top: 18px;
+	content: "";
+	width: 24px;
+	height: 2px;
+	background-color: #000;
+}
+#header .intro {
+	padding: 94px 40px 0;
+}
+#header .first_title {
+	position: relative;
+	height: 118px;
+}
+#header .first_title .first_title_area {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#header .first_title .first_title_area span {
+	display: block;
+	font-family: 'Noto Sans HK', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	color: #000;
+}
+#header .first_title .first_title_area span.second {
+	margin-top: -5px;
+	color: $main-color;
+}
+#header .first_title .img {
+	position: absolute;
+	top:0;
+	right: 0;
+	border-radius: 50%;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+#header .intro_text {
+	margin-top: 24px;
+}
+#header .intro_text p {
+	font-size: 13px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+	color: #333;
+	line-height: 24px;
+}
+#header .intro_text p.second {
+	margin-top: 14px;
+}

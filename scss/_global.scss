@@ -1,0 +1,571 @@
+$main-color: #615CFD;
+$main-font: 'Noto Sans HK','Noto Sans KR', sans-serif;
+$main-font-kr: 'Noto Sans KR', sans-serif;
+body {
+	font-family: $main-font;
+}
+
+.dim {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 50;
+	background-color:rgba(0,0,0,0);
+	@include transitionEffect(background-color, 0.5s);
+}
+.dim.active {
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+}
+.clearfix::before,
+.clearfix::after {
+	display: block;
+	content: '';
+}
+.clearfix::after {
+	clear: both;
+}
+::selection {
+	background-color: black;
+	color: #ccc;
+}
+#header .upper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 104px;
+	@include transitionEffect(all, 0.4s);
+}
+
+#header .upper .upper_inner {
+	height: 104px;
+	padding: 0 200px;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+	#header .upper .upper_inner {
+		padding: 0 70px;
+	}
+}
+@media only screen and (max-width: 1200px) and (min-width: 0) {
+	#header .upper .upper_inner {
+		padding: 0 30px;
+	}
+}
+
+#header .upper .menu {
+	position: relative;
+	width: 100%;
+	height: 104px;
+}
+#header .upper .menu .logo {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	@include transformXY(0, -50%);
+}
+#header .upper .menu .logo h1 {
+	font-size: 16px;
+}
+#header .upper .menu .logo h1 a {
+	display: block;
+}
+#header .upper .menu .side {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	@include transformXY(0, -50%);
+}
+#header .upper .menu .side a {
+	font-size: 16px;
+	color: #fff;
+}
+#header .upper .menu .side span {
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: $main-color;
+}
+#header .upper .menu .main_menu {
+	position: absolute;
+	width: 535px;
+	left: 50%;
+	top: 50%;
+	@include transformXY(-50%, -50%);
+}
+#header .upper .menu .mobile_menu {
+	display: none;
+	position: absolute;
+	right: -10px;
+	top: 50%;
+	@include transformXY(0, -50%);
+	@include transitionEffect(right, 0.5s);
+	transition-timing-function: ease-in-out;
+}
+#header .upper .menu .mobile_menu.tab {
+	right: 230px;
+}
+#header .upper .menu .mobile_menu .btn_all_menu {
+	display: block;
+	width: 30px;
+	height: 19px;
+}
+#header .upper .menu .mobile_menu span {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	@include transitionEffect(all, 0.5s);
+	transition-timing-function: ease-in-out;
+}
+#header .upper .menu .mobile_menu span.barTop {
+	top: 0;
+}
+#header .upper .menu .mobile_menu span.barMid {
+	top: 7px;
+}
+#header .upper .menu .mobile_menu span.barBot {
+	width: 60%;
+	top: 14px;
+}
+#header .upper .menu .mobile_menu.tab span.barTop {
+	transform: rotate(45deg);
+	top: 7px;
+}
+#header .upper .menu .mobile_menu.tab span.barMid {
+	width: 0;
+}
+#header .upper .menu .mobile_menu.tab span.barBot {
+	transform: rotate(-45deg);
+	width: 100%;
+	top: 7px;
+}
+
+@media only screen and (max-width: 991px) {
+	#header .upper .menu .logo {
+		left: -10px;
+	}
+	#header .upper {
+		background-color: #131313;
+		height: 58px;
+	}
+	#header .upper .upper_inner {
+		height: 58px;
+	}
+	#header .upper .menu {
+		height: 58px;
+	}
+	#header .upper .menu .main_menu {
+		display: none;
+	}
+	#header .upper .menu .side{
+		display: none;
+	}
+	#header .upper .menu .mobile_menu {
+		display: block;
+	}
+}
+
+#gnb {
+	li {
+		display: inline-block;
+		margin: 0 30px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover a,
+		&.on a {
+			color: $main-color;
+		}
+
+		a {
+			display: block;
+			font-size: 16px;
+			color: #fff;
+			@include transitionEffect(color, 0.5s);
+			&:focus {
+				color: $main-color;
+			}
+		}
+	}
+}
+
+#header .fixed_upper {
+	position: fixed;
+	top: -104px;
+	left: 0;
+	z-index: 899;
+	width: 100%;
+	height: 104px;
+	opacity: 0;
+	background-color: #131313;
+	@include transitionEffect(all, 0.4s);
+}
+#header .fixed_upper.show {
+	opacity: 1;
+	top: 0;
+}
+
+#header .fixed_upper .fixed_upper_inner {
+	height: 104px;
+	padding: 0 200px;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1200px) {
+	#header .fixed_upper .fixed_upper_inner {
+		padding: 0 70px;
+	}
+}
+@media only screen and (max-width: 1200px) and (min-width: 0) {
+	#header .fixed_upper .fixed_upper_inner {
+		padding: 0 30px;
+	}
+}
+
+#header .fixed_upper .menu {
+	position: relative;
+	width: 100%;
+	height: 104px;
+}
+#header .fixed_upper .menu .logo {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	@include transformXY(0, -50%);
+}
+#header .fixed_upper .menu .logo h1 {
+	font-size: 16px;
+}
+#header .fixed_upper .menu .logo h1 a {
+	display: block;
+}
+#header .fixed_upper .menu .side {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	@include transformXY(0, -50%);
+}
+#header .fixed_upper .menu .side a {
+	font-size: 16px;
+	color: #fff;
+}
+#header .fixed_upper .menu .side span {
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: $main-color;
+}
+#header .fixed_upper .menu .main_menu {
+	position: absolute;
+	width: 535px;
+	left: 50%;
+	top: 50%;
+	@include transformXY(-50%, -50%);
+}
+#header .fixed_upper .menu .fixed_mobile_menu {
+	display: none;
+	position: absolute;
+	right: -10px;
+	top: 50%;
+	@include transformXY(0, -50%);
+	@include transitionEffect(right, 0.5s);
+	transition-timing-function: ease-in-out;
+}
+#header .fixed_upper .menu .fixed_mobile_menu.tab {
+	right: 230px;
+}
+#header .fixed_upper .menu .fixed_mobile_menu .btn_all_menu {
+	display: block;
+	width: 30px;
+	height: 19px;
+}
+#header .fixed_upper .menu .fixed_mobile_menu span {
+	display: block;
+	position: absolute;
+	right: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	@include transitionEffect(all, 0.5s);
+	transition-timing-function: ease-in-out;
+}
+#header .fixed_upper .menu .fixed_mobile_menu span.barTop {
+	top: 0;
+}
+#header .fixed_upper .menu .fixed_mobile_menu span.barMid {
+	top: 7px;
+}
+#header .fixed_upper .menu .fixed_mobile_menu span.barBot {
+	width: 60%;
+	top: 14px;
+}
+#header .fixed_upper .menu .fixed_mobile_menu.tab span.barTop {
+	transform: rotate(45deg);
+	top: 7px;
+}
+#header .fixed_upper .menu .fixed_mobile_menu.tab span.barMid {
+	width: 0;
+}
+#header .fixed_upper .menu .fixed_mobile_menu.tab span.barBot {
+	transform: rotate(-45deg);
+	width: 100%;
+	top: 7px;
+}
+
+@media only screen and (max-width: 991px) {
+	#header .fixed_upper .menu .logo {
+		left: -10px;
+	}
+	#header .fixed_upper {
+		background-color: #131313;
+		height: 58px;
+		top: -58px;
+	}
+	#header .fixed_upper .upper_inner {
+		height: 58px;
+	}
+	#header .fixed_upper .menu {
+		height: 58px;
+	}
+	#header .fixed_upper .menu .main_menu {
+		display: none;
+	}
+	#header .fixed_upper .menu .side{
+		display: none;
+	}
+	#header .fixed_upper .menu .fixed_mobile_menu {
+		display: block;
+	}
+}
+#fixed_gnb {
+	li {
+		display: inline-block;
+		margin: 0 30px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover a,
+		&.on a {
+			color: $main-color;
+		}
+	}
+	a {
+		display: block;
+		font-size: 16px;
+		color: #fff;
+		@include transitionEffect(color, 0.5s);
+	}
+}
+
+
+#mobile_gnb {
+	position: fixed;
+	right: -240px;
+	top: 0;
+	padding-top: 65px; 
+	padding-left: 20px;
+	width: 240px;
+	height: 100vh;
+	box-sizing: border-box;
+	text-align: left;
+	background-color: #fff;
+	@include transitionEffect(right, 0.5s);
+	transition-timing-function: ease-in-out;
+	&.active {
+		right: 0;
+	}
+	li {
+		position: relative;
+		&::before {
+			content:"";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 38px;
+			width: 200px;
+			height: 1px;
+			background-color: #f1f1f1;
+		}
+		&.on a {
+			color: $main-color;
+		}
+		a {
+			display: block;
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 40px;
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+}
+
+#fixed_mobile_gnb {
+	position: fixed;
+	right: -240px;
+	top: 0;
+	padding-top: 65px; 
+	padding-left: 20px;
+	width: 240px;
+	height: 100vh;
+	box-sizing: border-box;
+	text-align: left;
+	background-color: #fff;
+	@include transitionEffect(right, 0.5s);
+	transition-timing-function: ease-in-out;
+	&.active {
+		right: 0;
+	}
+	li {
+		position: relative;
+		&::before {
+			content:"";
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 38px;
+			width: 200px;
+			height: 1px;
+			background-color: #f1f1f1;
+		}
+		&.on a {
+			color: $main-color;
+		}
+		a {
+			display: block;
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 40px;
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+}
+
+#header .slider {
+	position: relative;
+	height: 900px;
+	overflow: hidden;
+	width: 100%;
+}
+#header .slider img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include transformXY(-50%, -50%);
+}
+#header .slider .slider_text {
+	position: absolute;
+	width: 750px;
+	left: 50%;
+	top: 50%;
+	@include transformXY(-50%, -50%);
+}
+@media only screen and (max-width: 1200px) {
+	#header .slider .slider_text {
+		max-width: 482px;
+	}
+}
+@media only screen and (max-width: 992px) {
+	#header .slider .slider_text {
+		max-width: 535px;
+	}
+	#header .slider {
+		height: 620px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#header .slider .slider_text {
+		max-width: 482px;
+	}
+	#header .slider {
+		height: 500px;
+	}
+}
+@media only screen and (max-width: 576px) {
+	#header .slider .slider_text {
+		max-width: 321px;
+	}
+}
+
+
+#header .slider .slider_text span {
+	font-size: 69px;
+	line-height: 90px;
+	color: #fff;
+	display: block;
+	opacity: 0;
+	@include transformXY(-20px, 0);
+	transition: opacity 1.2s, transform 1.2s;
+}
+#header .slider.active .slider_text span {
+	opacity: 1;
+	@include transformXY(0, 0);
+	transition-delay: 0.1s;
+}
+@media only screen and (max-width:1200px) and (min-width: 992px) {
+	#header .slider .slider_text span {
+		font-size: 45px;
+		line-height: 55px;
+	}
+}
+@media only screen and (max-width:991px) and (min-width: 768px) {
+	#header .slider .slider_text span {
+		font-size: 50px;
+		line-height: 62px;
+	}
+}
+@media only screen and (max-width:767px) {
+	#header .slider .slider_text span {
+		font-size: 30px;
+		line-height: 35px;
+	}
+}
+#header .slider .slider_text a {
+	display: block;
+	width: 185px;
+	height: 50px;
+	background-color: rgba(97, 92, 253, 1);
+	color: #fff;
+	line-height: 47px;
+	text-align: center;
+	border-radius: 27px;
+	margin-top: 40px;
+	font-weight: 400;
+	font-size: 16px;
+	border: 1px solid $main-color;
+	box-sizing: border-box;
+	opacity: 0;
+	@include transformXY(-20px, 0);
+	transition: opacity 1.2s, transform 1.2s, color 0.5s, background-color 0.5s;
+}
+#header .slider.active .slider_text a {
+	opacity: 1;
+	@include transformXY(0, 0);
+	transition-delay: opacity 0.2s, transform 0.2s;
+}
+#header .slider .slider_text a:hover,
+#header .slider .slider_text a:focus {
+	background-color: rgba(97, 92, 253, 0);
+	box-sizing: border-box;
+	border: 1px solid $main-color;
+	color: $main-color;
+}
