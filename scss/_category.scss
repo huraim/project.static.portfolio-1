@@ -570,7 +570,21 @@
 	line-height: 32px;
 	color: #fff;
 }
-#feedback .slider_list .profile {
+#feedback .slider_list .profile1 {
+	margin: 0 auto;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	@include bgCover("/portfolio/images/kimkimin.jpg");
+}
+#feedback .slider_list .profile2 {
+	margin: 0 auto;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+#feedback .slider_list .profile3 {
 	margin: 0 auto;
 	width: 42px;
 	height: 42px;

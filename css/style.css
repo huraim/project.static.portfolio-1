@@ -10582,7 +10582,24 @@ body {
   line-height: 32px;
   color: #fff; }
 
-#feedback .slider_list .profile {
+#feedback .slider_list .profile1 {
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-image: url("/portfolio/images/kimkimin.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+#feedback .slider_list .profile2 {
+  margin: 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #fff; }
+
+#feedback .slider_list .profile3 {
   margin: 0 auto;
   width: 42px;
   height: 42px;
