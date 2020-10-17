@@ -10597,7 +10597,7 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background-image: url("/portfolio/images/leemunsuk.jpg");
+  background-image: url("/portfolio/images/yoondongjun.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -10607,7 +10607,10 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background-color: #fff; }
+  background-image: url("/portfolio/images/leemunsuk.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 #feedback .slider_list .profile4 {
   margin: 0 auto;
