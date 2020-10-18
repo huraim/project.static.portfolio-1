@@ -10305,7 +10305,7 @@ body {
   transition-delay: 0.3s; }
 
 #detail .descriptions li:nth-child(5) {
-  top: 2600px; }
+  top: 2650px; }
 
 #detail .descriptions li:nth-child(5).active {
   opacity: 1;
