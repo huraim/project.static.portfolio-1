@@ -596,7 +596,7 @@
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
-	background-color: #fff;
+	@include bgCover("/portfolio/images/simsoyun.jpg");
 }
 #feedback .slider_list span{
 	display: block;

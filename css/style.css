@@ -10617,7 +10617,10 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background-color: #fff; }
+  background-image: url("/portfolio/images/simsoyun.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 #feedback .slider_list span {
   display: block;
