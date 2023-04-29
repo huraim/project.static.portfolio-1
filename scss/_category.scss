@@ -184,7 +184,7 @@
 	top: 0;
 	width: 50%;
 	height: 100%;
-	@include bgCover("/portfolio/images/profile.jpg");
+	@include bgCover("/project.static.portfolio-1/images/profile.jpg");
 }
 #about .about_inner {
 	width: 1110px;
@@ -553,7 +553,7 @@
 	margin-top: 154px;
 	width: 100%;
 	height: 633px;
-	@include bgCover("/portfolio/images/feedback.png");
+	@include bgCover("/project.static.portfolio-1/images/feedback.png");
 }
 #feedback .feedback_inner {
 	width: 1110px;
@@ -575,28 +575,28 @@
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
-	@include bgCover("/portfolio/images/kimkimin.jpg");
+	@include bgCover("/project.static.portfolio-1/images/kimkimin.jpg");
 }
 #feedback .slider_list .profile2 {
 	margin: 0 auto;
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
-	@include bgCover("/portfolio/images/yoondongjun.jpg");
+	@include bgCover("/project.static.portfolio-1/images/yoondongjun.jpg");
 }
 #feedback .slider_list .profile3 {
 	margin: 0 auto;
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
-	@include bgCover("/portfolio/images/leemunsuk.jpg");
+	@include bgCover("/project.static.portfolio-1/images/leemunsuk.jpg");
 }
 #feedback .slider_list .profile4 {
 	margin: 0 auto;
 	width: 42px;
 	height: 42px;
 	border-radius: 50%;
-	@include bgCover("/portfolio/images/simsoyun.jpg");
+	@include bgCover("/project.static.portfolio-1/images/simsoyun.jpg");
 }
 #feedback .slider_list span{
 	display: block;

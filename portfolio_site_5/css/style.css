@@ -4102,7 +4102,7 @@ body {
   z-index: 999;
   width: 40px;
   height: 40px;
-  background: url(/portfolio/portfolio_site_5/images/next.png) no-repeat center center;
+  background: url(/project.static.portfolio-1/portfolio_site_5/images/next.png) no-repeat center center;
   cursor: pointer; }
 
 #header .prevbtn {
@@ -4112,7 +4112,7 @@ body {
   z-index: 999;
   width: 40px;
   height: 40px;
-  background: url(/portfolio/portfolio_site_5/images/prev.png) no-repeat center center;
+  background: url(/project.static.portfolio-1/portfolio_site_5/images/prev.png) no-repeat center center;
   cursor: pointer; }
 
 #content .up {

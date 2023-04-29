@@ -3,36 +3,36 @@
 				"type": "PC",
 				"title": "I-TECH",
 				"src": "category1",
-				"url": "/portfolio/portfolio_detail_1/portfolio_detail_1.html"
+				"url": "/project.static.portfolio-1/portfolio_detail_1/portfolio_detail_1.html"
 			},
 			"item2": {
 				"type": "Mobile",
 				"title": "SKY-Vivaldi",
 				"src": "category2",
-				"url": "/portfolio/portfolio_detail_2/portfolio_detail_2.html"
+				"url": "/project.static.portfolio-1/portfolio_detail_2/portfolio_detail_2.html"
 			},
 			"item3": {
 				"type": "Reactive",
 				"title": "Wylie",
 				"src": "category3",
-				"url": "/portfolio/portfolio_detail_3/portfolio_detail_3.html"
+				"url": "/project.static.portfolio-1/portfolio_detail_3/portfolio_detail_3.html"
 			},
 			"item4": {
 				"type": "Mobile",
 				"title": "I-TECH",
 				"src": "category4",
-				"url": "/portfolio/portfolio_detail_4/portfolio_detail_4.html"
+				"url": "/project.static.portfolio-1/portfolio_detail_4/portfolio_detail_4.html"
 			},
 			"item5": {
 				"type": "PC",
 				"title": "SKY-Vivaldi",
 				"src": "category5",
-				"url": "/portfolio/portfolio_detail_5/portfolio_detail_5.html"
+				"url": "/project.static.portfolio-1/portfolio_detail_5/portfolio_detail_5.html"
 			},
 			"item6": {
 				"type": "Graphic",
 				"title": "Winegraph",
 				"src": "category6",
-				"url": "/portfolio/portfolio_detail_6/portfolio_detail_6.html"
+				"url": "/project.static.portfolio-1/portfolio_detail_6/portfolio_detail_6.html"
 			}
 }

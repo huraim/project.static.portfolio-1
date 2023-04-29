@@ -2,7 +2,7 @@ window.addEventListener("load",function(){
 
 	//GNB & SCROLL (pc and mobile) + AJAX
 
-	var requestURL="/portfolio/data/gnb.json";
+	var requestURL="/project.static.portfolio-1/data/gnb.json";
 	var request= new XMLHttpRequest();
 	request.open("GET",requestURL);
 	//request.responseType="json";
@@ -360,7 +360,7 @@ window.addEventListener("load",function(){
 
 	//AJAX Portfolio category btn
 
-	var pfrequestURL="/portfolio/data/portfolio.json";
+	var pfrequestURL="/project.static.portfolio-1/data/portfolio.json";
 	var pfrequest= new XMLHttpRequest();
 	pfrequest.open("GET",pfrequestURL);
 	//pfrequest.responseType="json";
@@ -389,7 +389,7 @@ window.addEventListener("load",function(){
 		
 					if(pfnum == Object.keys(data[key1]).length){ // 반복 방지 마지막 키
 						pfListHtml+='<li>\n';
-						pfListHtml+='<img src="/portfolio/images/'+data[key1]["src"]+'.jpg" alt="'+data[key1]["src"]+'">\n'
+						pfListHtml+='<img src="/project.static.portfolio-1/images/'+data[key1]["src"]+'.jpg" alt="'+data[key1]["src"]+'">\n'
 						pfListHtml+='<div class="list_hover">\n';
 						pfListHtml+='<div class="box">\n';
 						pfListHtml+='<h3>Portfolio</h3>\n';
@@ -420,7 +420,7 @@ window.addEventListener("load",function(){
 							if(data[key1]["type"] == categoryText){
 								if(pfnum == Object.keys(data[key1]).length){
 									pfListHtml+='<li>\n';
-									pfListHtml+='<img src="/portfolio/images/'+data[key1]["src"]+'.jpg" alt="'+data[key1]["src"]+'">\n'
+									pfListHtml+='<img src="/project.static.portfolio-1/images/'+data[key1]["src"]+'.jpg" alt="'+data[key1]["src"]+'">\n'
 									pfListHtml+='<div class="list_hover">\n';
 									pfListHtml+='<div class="box">\n';
 									pfListHtml+='<h3>Portfolio</h3>\n';
@@ -436,7 +436,7 @@ window.addEventListener("load",function(){
 						else {
 							if(pfnum == Object.keys(data[key1]).length){
 								pfListHtml+='<li>\n';
-								pfListHtml+='<img src="/portfolio/images/'+data[key1]["src"]+'.jpg" alt="'+data[key1]["src"]+'">\n'
+								pfListHtml+='<img src="/project.static.portfolio-1/images/'+data[key1]["src"]+'.jpg" alt="'+data[key1]["src"]+'">\n'
 								pfListHtml+='<div class="list_hover">\n';
 								pfListHtml+='<div class="box">\n';
 								pfListHtml+='<h3>Portfolio</h3>\n';
@@ -458,7 +458,7 @@ window.addEventListener("load",function(){
 
 	//AJAX Skills li
 
-	var skrequestURL="/portfolio/data/skills.json";
+	var skrequestURL="/project.static.portfolio-1/data/skills.json";
 	var skrequest= new XMLHttpRequest();
 	skrequest.open("GET",skrequestURL);
 	//skrequest.responseType="json";
@@ -475,7 +475,7 @@ window.addEventListener("load",function(){
 
 		for(var skKey in skdata) {
 			skListHtml+='<li>\n';
-			skListHtml+='<img src="/portfolio/images/'+skdata[skKey]["img"]+'.png" alt="'+skdata[skKey]["img"]+'">\n';
+			skListHtml+='<img src="/project.static.portfolio-1/images/'+skdata[skKey]["img"]+'.png" alt="'+skdata[skKey]["img"]+'">\n';
 			skListHtml+='<dl>\n';
 			skListHtml+='<dt>'+skdata[skKey]["dt"]+'</dt>\n';
 			skListHtml+='<dd>'+skdata[skKey]["dd"]+'</dd>\n';
